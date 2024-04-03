@@ -133,5 +133,18 @@ describe('main', () => {
 
 > DÍA UNO COMPLETADO
 
+## **Paso 7:** Instalar librería para controlar acciones de usuario
+
+- Instalar @testing-library/user-event
+
+`npm i -D @testing-library/user-event`
 
 
+Enlaces de documentación:
+
+- [Guia de roles de elemntos html de accesibilidad (Mozilla Developers)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+- [Doc Jest-dom (Custom Matchers)](https://github.com/testing-library/jest-dom?tab=readme-ov-file)
+- [User Events][https://testing-library.com/docs/user-event/intro/]
+
+
+> DÍA DOS COMPLETADO
