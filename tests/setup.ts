@@ -1,5 +1,13 @@
  import "@testing-library/jest-dom/vitest";
 import ResizeObserver from "resize-observer-polyfill";
+import { server } from "./mock/server";
+
+// Levanta el servidor de mock antes de empezar los test
+beforeAll(() => server.listen());
+// Limpiar los datos despues de cada test para evitar incongruencias
+afterEach(() => server.resetHandlers());
+// Cerrar el servidor despues de pasar los test
+afterAll(() => server.close());
 
 
 Object.defineProperty(window, 'matchMedia', {
