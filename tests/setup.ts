@@ -10,6 +10,9 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 
+vi.mock("@auth0/auth0-react");
+
+
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: vi.fn().mockImplementation(query => ({
