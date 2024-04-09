@@ -13,11 +13,11 @@ const AllProviders = ({ children }: PropsWithChildren) => {
   });
 
   return (
-    <QueryClientProvider client={client}>
-      <CartProvider>
-        <Theme>{children}</Theme>
-      </CartProvider>
-    </QueryClientProvider>
+      <QueryClientProvider client={client}>
+        <CartProvider>
+          <Theme>{children}</Theme>
+        </CartProvider>
+      </QueryClientProvider>
   );
 };
 
